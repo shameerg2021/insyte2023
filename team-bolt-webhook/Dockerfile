@@ -1,4 +1,3 @@
-RUN mvn clean install
 FROM eclipse-temurin:17-jdk-alpine
 VOLUME /tmp
 COPY --from=build /target/*.jar app.jar
